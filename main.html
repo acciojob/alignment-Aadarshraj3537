@@ -1,57 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Example</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>HTML Assignment 3</title>
+    <style>
+        table {
+            border: 1px solid black;
+            border-spacing: 1px;
+            padding: 1px;
+        }
+        .middle {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .green {
+            background-color: green;
+        }
+        .blue {
+            background-color: blue;
+        }
+        .center {
+            text-align: center;
+        }
+        .right {
+            text-align: right;
+        }
+    </style>
 </head>
-
 <body>
-    <header>
-        <h1>Welcome to My Web Page</h1>
-        <nav>
-            <ul>
-                <li><a href="#section1">Section 1</a></li>
-                <li><a href="#section2">Section 2</a></li>
-                <li><a href="#section3">Section 3</a></li>
-            </ul>
-        </nav>
-    </header>
+    <h1 style="text-align: center;">HTML Assignment #3</h1>
 
-    <main>
-        <section id="section1">
-            <h2>Section 1: Introduction</h2>
-            <p>This is the first section of the web page. It provides an introduction.</p>
-        </section>
+    <!-- Table 1 -->
+    <table id="table-1" class="middle">
+        <tr>
+            <td id="t11">Cell 1</td>
+            <td id="t12" class="center">Cell 2</td>
+            <td id="t13" class="right">Cell 3</td>
+        </tr>
+        <tr>
+            <td id="t11">Cell 4</td>
+            <td id="t12" class="center">Cell 5</td>
+            <td id="t13" class="right">Cell 6</td>
+        </tr>
+        <tr>
+            <td id="t11">Cell 7</td>
+            <td id="t12" class="center">Cell 8</td>
+            <td id="t13" class="right">Cell 9</td>
+        </tr>
+    </table>
+    <br>
 
-        <section id="section2">
-            <h2>Section 2: Features</h2>
-            <p>This section highlights some features of the page.</p>
-            <button onclick="showAlert()">Click Me</button>
-        </section>
+    <!-- Table 2 -->
+    <table id="table-2" class="middle">
+        <tr>
+            <td id="t21" colspan="6" class="center">Table 2 Header (colspan 6)</td>
+        </tr>
+        <tr>
+            <td>Row 1, Col 1</td>
+            <td>Row 1, Col 2</td>
+            <td>Row 1, Col 3</td>
+            <td>Row 1, Col 4</td>
+            <td>Row 1, Col 5</td>
+            <td>Row 1, Col 6</td>
+        </tr>
+        <tr>
+            <td>Row 2, Col 1</td>
+            <td>Row 2, Col 2</td>
+            <td>Row 2, Col 3</td>
+            <td>Row 2, Col 4</td>
+            <td>Row 2, Col 5</td>
+            <td>Row 2, Col 6</td>
+        </tr>
+        <tr>
+            <td>Row 3, Col 1</td>
+            <td>Row 3, Col 2</td>
+            <td>Row 3, Col 3</td>
+            <td>Row 3, Col 4</td>
+            <td>Row 3, Col 5</td>
+            <td>Row 3, Col 6</td>
+        </tr>
+        <tr>
+            <td>Row 4, Col 1</td>
+            <td>Row 4, Col 2</td>
+            <td>Row 4, Col 3</td>
+            <td>Row 4, Col 4</td>
+            <td>Row 4, Col 5</td>
+            <td>Row 4, Col 6</td>
+        </tr>
+        <tr>
+            <td>Row 5, Col 1</td>
+            <td>Row 5, Col 2</td>
+            <td>Row 5, Col 3</td>
+            <td>Row 5, Col 4</td>
+            <td>Row 5, Col 5</td>
+            <td>Row 5, Col 6</td>
+        </tr>
+    </table>
+    <br>
 
-        <section id="section3">
-            <h2>Section 3: Contact</h2>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <br>
-                <button type="submit">Submit</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 My Web Page</p>
-    </footer>
-
-    <script type="text/javascript" src="./script.js"></script>
+    <!-- Table 3 -->
+    <table id="table-3" class="middle">
+        <tr class="green">
+            <td colspan="3">First Row (Green)</td>
+        </tr>
+        <tr>
+            <td id="t-image" colspan="3">
+                <img src="https://via.placeholder.com/300" alt="Placeholder Image">
+            </td>
+        </tr>
+        <tr class="blue">
+            <td colspan="3">Last Row (Blue)</td>
+        </tr>
+    </table>
 </body>
-
 </html>
 
